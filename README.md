@@ -46,17 +46,21 @@ This repository contains the Fishy Launcher — a simple Python project intended
 
 If this branch has additional dependencies, add them to requirements.txt and update this section.
 
-## Usage
+## Get started
 
-Replace these commands with the actual usage for this branch.
-
-Basic run (example):
+To get started, run the launcher from the repository root:
 
 ```bash
-python launcher.py
+py main.py
 ```
 
-If the launcher requires configuration (account name, game directory, JVM args), document how to provide them here (CLI args, config file, environment variables).
+If you prefer the cross-platform Python command, you can also use:
+
+```bash
+python main.py
+```
+
+Document any required CLI options or configuration (username, game directory, JVM args) here if the launcher requires them.
 
 ## Configuration
 
