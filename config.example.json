@@ -1,0 +1,6 @@
+{
+  "username": "Player",
+  "game_dir": "./.minecraft",
+  "memory": "2G",
+  "jvm_args": "-Xmx2G -Xms1G"
+}

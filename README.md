@@ -6,13 +6,13 @@ Fishy Launcher for cracked Minecraft.
 
 ## About
 
-This repository contains the Fishy Launcher — a simple Python project intended to help run Minecraft in offline/cracked mode. This README is a starting point; update the Usage and Configuration sections with specifics for your branch as needed.
+This repository contains the Fishy Launcher — a simple Python project intended to help run Minecraft in offline/cracked mode. This README is a starting point and now includes everything needed to run the launcher locally.
 
 ## Features
 
 - Python-based launcher
 - Lightweight and easy to customize
-- Designed for offline/cracked Minecraft instances
+- Interactive terminal UI (uses questionary)
 
 > Note: This project is intended for educational and personal use. Running or distributing cracked software may violate Minecraft's Terms of Service and local laws. Use responsibly.
 
@@ -38,41 +38,51 @@ This repository contains the Fishy Launcher — a simple Python project intended
    venv\Scripts\activate   # Windows
    ```
 
-3. Install dependencies (if any):
+3. Install dependencies:
 
    ```bash
    pip install -r requirements.txt
    ```
 
-If this branch has additional dependencies, add them to requirements.txt and update this section.
-
 ## Get started
 
-To get started, run the launcher from the repository root:
+1. Copy the example configuration to create your runtime config (only needed the first time):
 
-```bash
-py main.py
-```
+   ```bash
+   cp config.example.json config.json   # macOS / Linux
+   copy config.example.json config.json # Windows PowerShell
+   ```
 
-If you prefer the cross-platform Python command, you can also use:
+   Edit `config.json` and set your preferred `username`, `game_dir`, and `memory` if needed.
 
-```bash
-python main.py
-```
+2. Run the launcher from the repository root:
 
-This README is ready — after completing the Installation steps above, running `py main.py` (or `python main.py`) will start the launcher. If main.py accepts any CLI options (username, game directory, memory/JVM args), document them here or in a config file.
+   ```bash
+   py main.py
+   ```
+
+   If `py` is not available on your platform, use:
+
+   ```bash
+   python main.py
+   ```
+
+3. Use the interactive menu to Play, open Settings, or Exit.
 
 ## Configuration
 
-Provide any configuration file examples or environment variables here. Example config file `config.json`:
+Use `config.example.json` as a template. Do NOT commit personal credentials to the repository. Example fields:
 
 ```json
 {
   "username": "Player",
   "game_dir": "./.minecraft",
-  "memory": "2G"
+  "memory": "2G",
+  "jvm_args": "-Xmx2G -Xms1G"
 }
 ```
+
+If `main.py` or other modules require additional fields, add them to `config.json` and document them here.
 
 ## Development
 
@@ -90,10 +100,8 @@ Contributions are welcome. Please open issues or pull requests describing the ch
 
 ## License
 
-Add a license file to the repository (e.g., MIT) and update this section accordingly.
+This project is licensed under the MIT License — see LICENSE for details.
 
 ## Contact
 
 Repository: https://github.com/hken768/Fishy-Launcher
-
-If you'd like changes to this README (customized usage, screenshots, or a different tone), tell me what to include and I will update it.

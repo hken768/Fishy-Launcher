@@ -1,0 +1,14 @@
+# Ignore Python artifacts and local environment
+__pycache__/
+*.pyc
+venv/
+.env
+.DS_Store
+.mypy_cache/
+.cache/
+
+# Game files
+.minecraft/
+
+# Logs
+logs/
