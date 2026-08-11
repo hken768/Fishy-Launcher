@@ -9,6 +9,10 @@ Made by Just Me
 - Version Management
 - LightWeight
 
+## 📋 Prerequisites
+- **Python 3.8+**
+- **Java (JRE/JDK)** installed on your system (required to run Minecraft).
+
 ## Get Started
 1. **Clone/download this repo**
 2. **Install Library:**
