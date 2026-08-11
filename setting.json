@@ -1,0 +1,7 @@
+{
+    "username": "Fatan123",
+    "ram": [
+        "-Xms4G",
+        "-Xmx4G"
+    ]
+}
