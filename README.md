@@ -60,7 +60,7 @@ If you prefer the cross-platform Python command, you can also use:
 python main.py
 ```
 
-Document any required CLI options or configuration (username, game directory, JVM args) here if the launcher requires them.
+This README is ready — after completing the Installation steps above, running `py main.py` (or `python main.py`) will start the launcher. If main.py accepts any CLI options (username, game directory, memory/JVM args), document them here or in a config file.
 
 ## Configuration
 
